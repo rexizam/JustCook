@@ -17,7 +17,7 @@
         app:cardCornerRadius="20dp"
         app:cardMaxElevation="2dp"
         app:cardElevation="1dp"
-        app:cardBackgroundColor="#FF8A80">
+        app:cardBackgroundColor="#FF675A">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

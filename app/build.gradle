@@ -40,12 +40,6 @@ android {
     }
 }
 
-allprojects {
-    repositories {
-        maven { url 'https://jitpack.io' }
-    }
-}
-
 dependencies {
 
     def lifecycle_version = "2.2.0"
@@ -110,6 +104,9 @@ dependencies {
 
     // FLOATING ACTION MENU
     implementation 'com.github.toanvc:floatingactionmenu:0.8.9'
+
+    // Snowfall Library
+    implementation 'com.github.jetradarmobile:android-snowfall:1.2.0'
 
     // UNIT TESTING
     testImplementation 'org.hamcrest:hamcrest-library:1.3'
