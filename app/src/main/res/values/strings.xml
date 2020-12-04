@@ -33,6 +33,7 @@
     <string name="all">All</string>
     <string name="unit_measure">Unit Measure</string>
     <string name="unit">Unit</string>
+    <string name="photo_of_the_meal">Photo of the meal</string>
     <string-array name="Categories">
         <item>Appetisers</item>
         <item>Salads</item>

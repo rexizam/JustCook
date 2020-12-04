@@ -21,7 +21,8 @@
 
         <activity
             android:name=".ui.activities.HomeActivity"
-            android:theme="@style/FullScreen">
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
