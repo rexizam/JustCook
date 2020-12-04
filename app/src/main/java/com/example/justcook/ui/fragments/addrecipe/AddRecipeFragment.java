@@ -6,14 +6,17 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -51,7 +54,7 @@ import dagger.hilt.android.AndroidEntryPoint;
  */
 
 @AndroidEntryPoint
-public class AddRecipeFragment extends Fragment implements Observer {
+public class AddRecipeFragment extends Fragment implements Observer, TextView.OnEditorActionListener {
 
     LottieAnimationView buttonAddIngredient;
     LottieAnimationView buttonAddInstruction;
@@ -133,6 +136,7 @@ public class AddRecipeFragment extends Fragment implements Observer {
         animationView = view.findViewById(R.id.lottieCook);
         animationView.setRenderMode(RenderMode.SOFTWARE);
         ingredientName = view.findViewById(R.id.ingredientName);
+        ingredientName.setOnEditorActionListener(this);
         ingredientAmount = view.findViewById(R.id.ingredientAmount);
         unitMeasure = view.findViewById(R.id.unitMeasure);
         instruction = view.findViewById(R.id.addInstructionMultiline);
@@ -344,5 +348,13 @@ public class AddRecipeFragment extends Fragment implements Observer {
         instructionList = (ArrayList<Step>)instructionListAdapter.getInstructions();
         outState.putParcelableArrayList("ingredients", extendedIngredientList);
         outState.putParcelableArrayList("instructions", instructionList);
+    }
+
+    @Override
+    public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+        if (i == EditorInfo.IME_ACTION_NEXT) {
+            ingredientAmount.requestFocus();
+        }
+        return true;
     }
 }
