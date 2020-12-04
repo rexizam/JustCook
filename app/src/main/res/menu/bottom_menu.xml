@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/browseRecipes"
+        android:title="@string/recipes"
+        android:icon="@drawable/ic_baseline_food_bank_24" />
+
+    <item
+        android:id="@+id/addRecipe"
+        android:title="@string/add_recipe"
+        android:icon="@drawable/ic_baseline_fiber_new_24" />
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_baseline_person_pin_24" />
+</menu>

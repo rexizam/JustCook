@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/onlineRecipeCard"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/card_foreground"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="#FF8A80">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/frame_2_selector"
+            android:gravity="center"
+            android:background="@drawable/card_background">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/onlineRecipeImg"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/image_for_the_recipe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:siRadius="100dp"
+                app:siSquare="true" />
+
+            <TextView
+                android:id="@+id/onlineRecipeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/indie_flower"
+                android:maxWidth="200dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="15sp"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/coordinatorBackground"
+    tools:context=".ui.fragments.browserecipes.BrowseRecipesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recipeRecyclerView"
+        android:layoutAnimation="@anim/layout_fall_down"
+        tools:listitem="@layout/recipe_item_layout"/>
+
+    <toan.android.floatingactionmenu.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:fab_addButtonColorNormal="#AA00FF"
+        app:fab_addButtonColorPressed="@color/purple_200"
+        app:fab_addButtonPlusIconColor="#E0F7FA"
+        app:fab_labelStyle="@style/customFAB"
+        app:fab_menuIcon="@drawable/ic_baseline_graphic_eq_24"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_gravity="end|bottom">
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_appetizers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#AA00FF"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_icon="@drawable/ic_baseline_set_meal_24"
+            app:fab_size="mini"
+            app:fab_title="@string/appetizers" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_salads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#AA00FF"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_icon="@drawable/ic_baseline_eco_24"
+            app:fab_size="mini"
+            app:fab_title="@string/salads" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_soups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#AA00FF"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_icon="@drawable/ic_baseline_rice_bowl_24"
+            app:fab_size="mini"
+            app:fab_title="@string/soups" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_main_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#AA00FF"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_icon="@drawable/ic_baseline_food_bank_24"
+            app:fab_size="mini"
+            app:fab_title="@string/main_course" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_pizzas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#AA00FF"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_icon="@drawable/ic_baseline_local_pizza_24"
+            app:fab_size="mini"
+            app:fab_title="@string/pizzas" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_desserts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#AA00FF"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_icon="@drawable/ic_baseline_cake_24"
+            app:fab_size="mini"
+            app:fab_title="@string/desserts" />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/fab_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#AA00FF"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_icon="@drawable/ic_baseline_clear_all_24"
+            app:fab_size="mini"
+            app:fab_title="@string/all" />
+
+    </toan.android.floatingactionmenu.FloatingActionsMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

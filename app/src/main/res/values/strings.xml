@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">JustCook</string>
+    <string name="home">Home</string>
+    <string name="recipes">Recipes</string>
+    <string name="add_recipe">Recipe</string>
+    <string name="extendedIngredients">Ingredients</string>
+    <string name="extendedIngredient">Ingredient</string>
+    <string name="close_button">Close Button</string>
+    <string name="category">Category</string>
+    <string name="analyzedInstruction">Instruction</string>
+    <string name="amount">Amount</string>
+    <string name="quantity">Qty</string>
+    <string name="add_ingredient">Add Ingredient</string>
+    <string name="cooking_instruction">Cooking Instruction</string>
+    <string name="analyzedInstructions">Instructions</string>
+    <string name="recipe_title">Recipe title</string>
+    <string name="save_recipe">Save Recipe</string>
+    <string name="name">Name</string>
+    <string name="image_for_the_recipe">Image for the recipe</string>
+    <string name="just_cook">Just Cook</string>
+    <string name="search_online_recipes">Search online recipes</string>
+    <string name="cooking_instructions">Cooking Instructions</string>
+    <string name="delete_recipe">Delete Recipe</string>
+    <string name="profile">Profile</string>
+    <string name="username">Username</string>
+    <string name="log_out">Log out</string>
+    <string name="appetizers">Appetizers</string>
+    <string name="salads">Salads</string>
+    <string name="main_course">Main Course</string>
+    <string name="desserts">Desserts</string>
+    <string name="soups">Soups</string>
+    <string name="pizzas">Pizzas</string>
+    <string name="all">All</string>
+    <string name="unit_measure">Unit Measure</string>
+    <string name="unit">Unit</string>
+    <string-array name="Categories">
+        <item>Appetisers</item>
+        <item>Salads</item>
+        <item>Main course</item>
+        <item>Desserts</item>
+        <item>Soups</item>
+        <item>Pizzas</item>
+    </string-array>
+</resources>

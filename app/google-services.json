@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "855309814620",
+    "firebase_url": "https://justcook-c7379.firebaseio.com",
+    "project_id": "justcook-c7379",
+    "storage_bucket": "justcook-c7379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855309814620:android:579a3450b64315c1ed8f99",
+        "android_client_info": {
+          "package_name": "com.example.justcook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855309814620-t2i6mnah0cgifv81mbm4dnsjbfrkkm9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.justcook",
+            "certificate_hash": "7a702ac7f28e0b7eefb0ebeed3c9a2ad911ac841"
+          }
+        },
+        {
+          "client_id": "855309814620-ap8utbf8mdviqhsujrha47jjkbdkjef9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9bJGGYsj7fgWdJZl7OYSFZ1WA-4si8IA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855309814620-ap8utbf8mdviqhsujrha47jjkbdkjef9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

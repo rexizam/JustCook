@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/spinner_border"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/removeBtn"
+        android:src="@drawable/ic_close"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_toEndOf="@+id/removeBtn"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/indie_flower"
+        android:textStyle="bold"
+        android:text="@string/amount"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:fontFamily="@font/indie_flower"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/unit_measure"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/indie_flower"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/extendedIngredient"/>
+
+</RelativeLayout>
