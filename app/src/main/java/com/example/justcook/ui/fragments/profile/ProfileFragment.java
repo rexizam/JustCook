@@ -24,11 +24,15 @@ import com.sanojpunchihewa.glowbutton.GlowButton;
 import java.util.Arrays;
 import java.util.List;
 
+import dagger.hilt.android.AndroidEntryPoint;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link ProfileFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+
+@AndroidEntryPoint
 public class ProfileFragment extends Fragment {
 
     private static final int RC_SIGN_IN = 41;
