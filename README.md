@@ -16,4 +16,5 @@ Networking<br/>
 Google Services<br/>
 Testing<br/>
 Dependency Injection (Dagger Hilt)<br/>
+Asynchronous programming with observable streams (Rx Java)<br/>
 Animations
