@@ -1,7 +1,7 @@
 # JustCook
 My first Android application
 
-[!App preview(app-snippet.png)]
+![App preview](app-snippet.png)
 
 Application develpment coverage:
 
