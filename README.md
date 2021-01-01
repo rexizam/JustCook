@@ -3,7 +3,7 @@ My first Android application
 
 ![App preview](app-snippet.png)
 
-Application develpment coverage:<br/>
+# Application develpment coverage:<br/>
 <br/>
 Layouts<br/>
 Activities & Resources<br/>
