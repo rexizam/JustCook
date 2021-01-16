@@ -30,9 +30,9 @@ public class RecipeRepository {
         return recipeApiService.getRecipes(apiKey);
     }
 
-    public Observable<RecipeResponse> getRecipe(String title)
+    public Observable<RecipeResponse> searchRecipesByTitle(String title)
     {
-        return recipeApiService.getRecipe(apiKey ,title);
+        return recipeApiService.searchRecipesByTitle(apiKey ,title);
     }
 
     public Observable<OnlineRecipe> getRecipeById(int id)
@@ -45,7 +45,7 @@ public class RecipeRepository {
         return recipeDao.getRecipesByCategory(category);
     }
 
-    public Recipe getRecipe(int id)
+    public Recipe searchRecipesByTitle(int id)
     {
         return recipeDao.getRecipe(id);
     }

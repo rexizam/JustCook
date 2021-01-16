@@ -6,10 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -105,7 +103,7 @@ public class HomeFragment extends Fragment {
         searchButton.setOnClickListener(view1 -> {
             if (!searchTextField.getText().toString().isEmpty())
             {
-                viewModel.getRecipe(searchTextField.getText().toString());
+                viewModel.searchRecipesByTitle(searchTextField.getText().toString());
                 InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(view1.getWindowToken(), 0);
             }

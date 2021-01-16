@@ -51,9 +51,9 @@ public class HomeViewModel extends ViewModel {
                         error-> Log.e(TAG, "getRecipes: " + error.getMessage() ));
     }
 
-    public void getRecipe(String title)
+    public void searchRecipesByTitle(String title)
     {
-        recipeRepository.getRecipe(title).subscribeOn(Schedulers.io())
+        recipeRepository.searchRecipesByTitle(title).subscribeOn(Schedulers.io())
                 .map(new Function<RecipeResponse, ArrayList<OnlineRecipe>>() {
                     @Override
                     public ArrayList<OnlineRecipe> apply(RecipeResponse recipeResponse) throws Throwable {
@@ -62,6 +62,6 @@ public class HomeViewModel extends ViewModel {
                 })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(result -> recipeList.setValue(result),
-                        error -> Log.e(TAG, "getRecipe: " + error.getMessage() ));
+                        error -> Log.e(TAG, "searchRecipesByTitle: " + error.getMessage() ));
     }
 }

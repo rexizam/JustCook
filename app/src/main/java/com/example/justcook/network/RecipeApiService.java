@@ -11,7 +11,7 @@ import retrofit2.http.Query;
 public interface RecipeApiService {
 
     @GET("recipes/complexSearch")
-    Observable<RecipeResponse> getRecipe(@Query("apiKey") String key, @Query("query") String title);
+    Observable<RecipeResponse> searchRecipesByTitle(@Query("apiKey") String key, @Query("query") String title);
 
     @GET("recipes/{id}/information")
     Observable<OnlineRecipe> getRecipeById(@Path("id") int id, @Query("apiKey") String key);
